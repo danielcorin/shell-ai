@@ -1,8 +1,8 @@
-# Shell-AI
+# 🐚✨ Shell-AI
 
 Shell-AI or `sai` is a tiny Python script on top of [OpenAI's Python library](https://github.com/openai/openai-python) to write and run shell commands.
 
-## Installation
+## 🛠️ Installation
 
 Add the following for your shell rc:
 
@@ -29,4 +29,13 @@ run command? (y/N): y
 ls -d 2023*
 run command? (y/N): y
 2023-04-16	2023-04-17	2023-04-18	2023-04-19	2023-04-20	2023-04-21	2023-04-22
+```
+
+**⚠️ Warning: do not try this ⚠️**
+
+```sh
+❯ sai remove root folder
+sudo rm -rf /
+run command? (y/N): ^C
+canceled
 ```

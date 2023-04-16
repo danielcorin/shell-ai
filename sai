@@ -18,6 +18,9 @@ Run:
 def green(string):
   return f"\033[92m{string}\033[0m"
 
+def red(string):
+  return f"\033[91m{string}\033[0m"
+
 def main():
   command = " ".join(sys.argv[1:])
   completion = openai.ChatCompletion.create(
@@ -31,8 +34,11 @@ def main():
   # strip backticks and extra whitespace in case the model adds them
   cmd_to_run = completion_result.strip("`").strip()
   print(green(cmd_to_run))
-  if input("run command? (y/N): ") == "y":
-    os.system(cmd_to_run)
+  try:
+    if input("run command? (y/N): ") == "y":
+      os.system(cmd_to_run)
+  except KeyboardInterrupt:
+    print("\n" + red("canceled"))
 
 if __name__ == "__main__":
   main()
