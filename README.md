@@ -1,4 +1,4 @@
-# 🐚✨ Shell-AI
+# 🐚🤖 Shell-AI
 
 Shell-AI or `sai` is a tiny Python script on top of [OpenAI's Python library](https://github.com/openai/openai-python) to write and run shell commands.
 
@@ -16,7 +16,7 @@ pip instal openai
 
 Copy `sai` somewhere on your `PATH`.
 
-## Usage
+## ✨ Usage
 
 ```sh
 ❯ sai create a folder for every day of the next week, including today named with the date formatted as 'yyyy-mm-dd'
