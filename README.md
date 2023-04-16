@@ -14,7 +14,13 @@ export OPENAI_API_KEY=<your_key>
 pip instal openai
 ```
 
-Copy `sai` somewhere on your `PATH`.
+Download `sai` to a folder on your `PATH`.
+This will probably work:
+
+```sh
+curl https://raw.githubusercontent.com/danielcorin/shell-ai/main/sai -o ~/bin/sai
+chmod +x ~/bin/sai
+```
 
 ## ✨ Usage
 
