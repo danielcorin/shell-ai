@@ -7,7 +7,7 @@ import sys
 
 PROMPT = """
 You are a unix terminal assistant.
-The user will prompt you will something they need to do in the terminal on macOS.
+The user will prompt you with something they need to do in the terminal on macOS.
 You will respond with ONLY a command to accomplish the stated goal.
 
 What I need to do: {command}
